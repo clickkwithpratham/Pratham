@@ -1,0 +1,208 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <meta name="description" content="A blog dedicated to Photography, its types, essential equipment, techniques, and famous photographers."/>
+  <title>Photography Blog</title>
+  <style>
+    * {
+      box-sizing: border-box;
+      margin: 0;
+      padding: 0;
+    }
+    body {
+      font-family: Arial, sans-serif;
+      background-color: #fff9e6;
+      line-height: 1.6;
+      color: #222;
+    }
+    header {
+      background-color: #0077b6;
+      color: white;
+      padding: 20px;
+      text-align: center;
+    }
+    nav {
+      background-color: #03045e;
+      display: flex;
+      justify-content: center;
+      flex-wrap: wrap;
+      padding: 10px;
+    }
+    nav button {
+      background: #caf0f8;
+      border: none;
+      color: #03045e;
+      padding: 10px 20px;
+      margin: 5px 10px;
+      font-weight: bold;
+      cursor: pointer;
+      border-radius: 5px;
+      transition: background-color 0.3s ease;
+    }
+    nav button:hover {
+      background-color: #90e0ef;
+    }
+    nav button.active {
+      background-color: #0077b6;
+      color: white;
+    }
+    section {
+      display: none;
+      max-width: 800px;
+      margin: 20px auto;
+      background-color: white;
+      padding: 20px;
+      border-radius: 10px;
+      box-shadow: 0 2px 8px rgba(0,0,0,0.1);
+    }
+    section.active {
+      display: block;
+    }
+    h2 {
+      color: #0077b6;
+      margin-bottom: 15px;
+    }
+    ul {
+      margin-left: 20px;
+      margin-bottom: 15px;
+    }
+    ul li {
+      margin-bottom: 10px;
+    }
+    a {
+      color: #0077b6;
+      text-decoration: none;
+    }
+    a:hover {
+      text-decoration: underline;
+    }
+    footer {
+      background-color: #03045e;
+      color: white;
+      text-align: center;
+      padding: 15px 10px;
+      margin-top: 40px;
+      font-size: 0.9rem;
+      user-select: none;
+    }
+    img {
+      max-width: 100%;
+      border-radius: 8px;
+      margin: 15px 0;
+    }
+    @media (max-width: 600px) {
+      nav button {
+        padding: 8px 16px;
+        margin: 5px 5px;
+        font-size: 0.9rem;
+      }
+      section {
+        margin: 15px 10px;
+        padding: 15px;
+      }
+    }
+  </style>
+</head>
+<body>
+  <header>
+    <h1>Photography Blog</h1>
+    <p>Capturing Moments, Telling Stories</p>
+  </header>
+  <nav>
+    <button aria-label="Show Home section" onclick="showSection('home')" class="active">Home</button>
+    <button aria-label="Show Types section" onclick="showSection('types')">Types</button>
+    <button aria-label="Show Equipment section" onclick="showSection('equipment')">Equipment</button>
+    <button aria-label="Show Techniques section" onclick="showSection('techniques')">Techniques</button>
+    <button aria-label="Show Famous Photographers section" onclick="showSection('famous')">Famous Photographers</button>
+    <button aria-label="Show Contact section" onclick="showSection('contact')">Contact</button>
+  </nav>
+
+  <section id="home" class="active">
+    <h2>Introduction to Photography</h2>
+    <p>Photography is the art and technique of capturing light to create lasting images. It allows us to tell stories, preserve memories, and express creativity. From the simplicity of a snapshot to the complexity of professional shoots, photography touches every aspect of our lives.</p>
+    <img src="https://images.pexels.com/photos/414171/pexels-photo-414171.jpeg" alt="Camera Photography"/>
+    <p>Whether you're a beginner or an experienced photographer, this blog explores various photography styles, equipment, techniques, and inspiration from the masters.</p>
+  </section>
+
+  <section id="types">
+    <h2>Types of Photography</h2>
+    <ul>
+      <li><strong>Portrait Photography:</strong> Capturing the personality and expression of individuals.</li>
+      <li><strong>Landscape Photography:</strong> Showcasing nature's beauty and scenery.</li>
+      <li><strong>Wildlife Photography:</strong> Documenting animals in their natural environments.</li>
+      <li><strong>Macro Photography:</strong> Close-up photography revealing fine details.</li>
+      <li><strong>Street Photography:</strong> Candid moments of urban life and culture.</li>
+      <li><strong>Event Photography:</strong> Capturing weddings, concerts, and other live events.</li>
+    </ul>
+    <img src="https://images.pexels.com/photos/414612/pexels-photo-414612.jpeg" alt="Landscape Photography"/>
+  </section>
+
+  <section id="equipment">
+    <h2>Essential Photography Equipment</h2>
+    <ul>
+      <li><strong>Camera:</strong> DSLR, Mirrorless, or smartphone cameras with good quality sensors.</li>
+      <li><strong>Lenses:</strong> Prime, zoom, wide-angle, or macro lenses suited to your style.</li>
+      <li><strong>Tripod:</strong> Stabilizes your camera for sharper images, especially in low light.</li>
+      <li><strong>Memory Cards:</strong> High capacity and fast write speed cards prevent lost shots.</li>
+      <li><strong>Lighting:</strong> Flashes, reflectors, and diffusers enhance your shots.</li>
+    </ul>
+    <img src="https://images.pexels.com/photos/276452/pexels-photo-276452.jpeg" alt="Photographic Equipment"/>
+  </section>
+
+  <section id="techniques">
+    <h2>Photography Techniques</h2>
+    <ul>
+      <li><strong>Rule of Thirds:</strong> Compose your scene by dividing the frame into thirds for better balance.</li>
+      <li><strong>Leading Lines:</strong> Use lines to guide viewers’ eyes towards the subject.</li>
+      <li><strong>Depth of Field:</strong> Control focus to isolate or include background elements.</li>
+      <li><strong>Golden Hour:</strong> Shoot during the early morning or late evening for warm light.</li>
+      <li><strong>Perspective:</strong> Experiment with angles — low, high, or unusual viewpoints.</li>
+      <li><strong>Post-Processing:</strong> Use software to enhance colors, contrast, and sharpness.</li>
+    </ul>
+    <img src="https://images.pexels.com/photos/212372/pexels-photo-212372.jpeg" alt="Photography Technique"/>
+  </section>
+
+  <section id="famous">
+    <h2>Famous Photographers</h2>
+    <ul>
+      <li><strong>Ansel Adams:</strong> Legendary for breathtaking black & white landscapes of the American West.<br/>
+        <img src="https://images.pexels.com/photos/1239291/pexels-photo-1239291.jpeg" alt="Ansel Adams style landscape"/>
+      </li>
+      <li><strong>Dorothea Lange:</strong> Documentary photographer known for powerful imagery during the Great Depression.<br/>
+        <img src="https://images.pexels.com/photos/325185/pexels-photo-325185.jpeg" alt="Dorothea Lange style"/>
+      </li>
+      <li><strong>Steve McCurry:</strong> Vibrant color portraits and photojournalism, most famous for “Afghan Girl.”<br/>
+        <img src="https://images.pexels.com/photos/953201/pexels-photo-953201.jpeg" alt="Steve McCurry style portrait"/>
+      </li>
+      <li><strong>Annie Leibovitz:</strong> Iconic celebrity portraits with dramatic flair.<br/>
+        <img src="https://images.pexels.com/photos/2379004/pexels-photo-2379004.jpeg" alt="Annie Leibovitz style"/>
+      </li>
+    </ul>
+  </section>
+
+  <section id="contact">
+    <h2>Contact</h2>
+    <p>For suggestions, feedback, or collaborations, please email us at: <a href="mailto:info@photographyblog.com">info@photographyblog.com</a></p>
+  </section>
+
+  <footer>
+    <p>&copy; Photography Blog by prathamesh</p>
+  </footer>
+
+  <script>
+    function showSection(id) {
+      const sections = document.querySelectorAll('section');
+      const buttons = document.querySelectorAll('nav button');
+      sections.forEach(section => {
+        section.classList.toggle('active', section.id === id);
+      });
+      buttons.forEach(button => {
+        button.classList.toggle('active', button.getAttribute('onclick').includes(id));
+      });
+    }
+  </script>
+</body>
+</html>
+
